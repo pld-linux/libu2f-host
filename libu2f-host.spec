@@ -17,6 +17,7 @@ BuildRequires:	gtk-doc >= 1.1
 BuildRequires:	help2man
 BuildRequires:	hidapi-devel >= 0.8.0
 BuildRequires:	json-c-devel
+BuildRequires:	pkgconfig
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	udev-devel >= 1:188
 BuildRequires:	xz
