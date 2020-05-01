@@ -6,12 +6,13 @@
 Summary:	Yubico Universal 2nd Factor (U2F) Host C Library
 Summary(pl.UTF-8):	Biblioteka C hosta Universal 2nd Factor (U2F) Yubico
 Name:		libu2f-host
-Version:	1.1.6
+Version:	1.1.10
 Release:	1
 License:	LGPL v2.1+ (library and tool), GPL v3+ (tests)
 Group:		Libraries
 Source0:	https://developers.yubico.com/libu2f-host/Releases/%{name}-%{version}.tar.xz
-# Source0-md5:	2af0c9df26e290bb35b7f154b835ce8c
+# Source0-md5:	7664b0d5c9940bdefc934dce15db1baf
+Patch0:		%{name}-json-c.patch
 URL:		https://developers.yubico.com/libu2f-host/
 BuildRequires:	gtk-doc >= 1.1
 BuildRequires:	help2man
@@ -65,7 +66,7 @@ Summary:	API documentation for libu2f-host library
 Summary(pl.UTF-8):	Dokumentacja API biblioteki libu2f-host
 License:	LGPL v2.1+
 Group:		Documentation
-%if "%{_rpmversion}" >= "5"
+%if "%{_rpmversion}" >= "4.6"
 BuildArch:	noarch
 %endif
 
@@ -77,6 +78,7 @@ Dokumentacja API biblioteki libu2f-host.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 %configure \
