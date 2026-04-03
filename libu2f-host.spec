@@ -7,7 +7,7 @@ Summary:	Yubico Universal 2nd Factor (U2F) Host C Library
 Summary(pl.UTF-8):	Biblioteka C hosta Universal 2nd Factor (U2F) Yubico
 Name:		libu2f-host
 Version:	1.1.10
-Release:	1
+Release:	2
 License:	LGPL v2.1+ (library and tool), GPL v3+ (tests)
 Group:		Libraries
 Source0:	https://developers.yubico.com/libu2f-host/Releases/%{name}-%{version}.tar.xz
